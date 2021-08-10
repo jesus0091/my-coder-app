@@ -7,7 +7,7 @@ body{
     width: 100%;
     position: absolute;
     bottom: 0;
-    height: 100px;
+    height: 80px;
     background-color: #ffcc80;
     /* border-radius: 20px; */
     display: flex;
@@ -34,13 +34,13 @@ body{
   }
   
   .bubble {
-    background-color: #fff;
+    background-color: black;
     width: 50px;
     height: 50px;
     bottom: 85px;
     border-radius: 50%;
     z-index: 1;
-    transform: translateY(120%);
+    transform: translateY(150%);
     display: flex;
     justify-content: center;
     align-items: center;
