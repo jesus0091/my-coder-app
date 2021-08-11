@@ -1,8 +1,9 @@
 import React, { Component } from 'react'
-import Card from './components/Card/Card'
 import NavBar from './components/NavBar/NavBar'
 import Header from './components/Header/Header'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import ComponentII from './components/ComponentII/ComponentII';
+import CardComponent from './components/Card/Card';
 
 
 export default class App extends Component {
@@ -10,7 +11,43 @@ export default class App extends Component {
         return (
             <div>
                 <Header />
-                <Card />
+                <CardComponent 
+                    cardImage=''
+                    cardTitle='Producto 1'
+                    cardDescription='Descrpcion de producto 1'
+                    buttonName='Add to cart'
+                />
+                <CardComponent 
+                    cardImage=''
+                    cardTitle='Producto 1'
+                    cardDescription='Descrpcion de producto 1'
+                    buttonName='Add to cart'
+                />
+                <CardComponent 
+                    cardImage=''
+                    cardTitle='Producto 1'
+                    cardDescription='Descrpcion de producto 1'
+                    buttonName='Add to cart'
+                />
+                <CardComponent 
+                    cardImage=''
+                    cardTitle='Producto 1'
+                    cardDescription='Descrpcion de producto 1'
+                    buttonName='Add to cart'
+                />
+                <CardComponent 
+                    cardImage=''
+                    cardTitle='Producto 1'
+                    cardDescription='Descrpcion de producto 1'
+                    buttonName='Add to cart'
+                />
+                <CardComponent 
+                    cardImage=''
+                    cardTitle='Producto 1'
+                    cardDescription='Descrpcion de producto 1'
+                    buttonName='Add to cart'
+                />
+                <ComponentII/>
                 <NavBar />
             </div>
         )

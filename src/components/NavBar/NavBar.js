@@ -1,6 +1,9 @@
 import React from 'react'
 import {gsap} from 'gsap'
 import './css/NavBar.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {faHouseUser, faShoppingBag, faUserCircle} from '@fortawesome/free-solid-svg-icons'
+
 
 
 const NavBar = () => {
@@ -22,23 +25,27 @@ const NavBar = () => {
     }
     return (
         <div>
-           <div className='' id="navbarContainer">
+           <div className='fixed-bottom' id="navbarContainer">
                 <div id="navbar">
                     <div id="bubbleWrapper">
-                        <a href="#" id="bubble1" className="bubble"><span className="icon">1</span></a>
-                        <a href="#" id="bubble2" className="bubble"><span className="icon">2</span></a>
-                        <a href="#" id="bubble3" className="bubble"><span className="icon">3</span></a>
-                        <a href="#" id="bubble4" className="bubble"><span className="icon">4</span></a>
+                        <a href="/#" id="bubble1" className="bubble"><span className="icon"><FontAwesomeIcon icon={faHouseUser} /></span></a>
+                        <a href="/#" id="bubble2" className="bubble"><span className="icon"><FontAwesomeIcon icon={faShoppingBag} /></span></a>
+                        <a href="/#" id="bubble3" className="bubble"><span className="icon">3</span></a>
+                        <a href="/#" id="bubble4" className="bubble"><span className="icon"><FontAwesomeIcon icon={faUserCircle} /></span></a>
                     </div>
                     <div id="menuWrapper">
-                        <div id="menu1" className="menuElement" onClick={ () => move('1', '12.5%', '#ffcc80')}  >
-                        1</div>
-                        <div id="menu2" className="menuElement" onClick={ () => move('2', '37.5%', '#ffcc80')}>
-                        2</div>
-                        <div id="menu3" className="menuElement" onClick={ () => move('3', '62.5%', '#ffcc80')}>
-                        3</div>
-                        <div id="menu4" className="menuElement" onClick={ () => move('4', '87.5%', '#ffcc80')}>
-                        4</div>
+                        <a href="/#" id="menu1" className="menuElement" onClick={ () => move('1', '12.5%', '#ffcc80')}>
+                            <FontAwesomeIcon icon={faHouseUser} />
+                        </a>
+                        <a href="/#" id="menu2" className="menuElement" onClick={ () => move('2', '37.5%', '#ffcc80')}>
+                            <FontAwesomeIcon icon={faShoppingBag} />
+                        </a>
+                        <a href="/#" id="menu3" className="menuElement" onClick={ () => move('3', '62.5%', '#ffcc80')}>
+                            <FontAwesomeIcon icon={faHouseUser} />
+                        </a>
+                        <a href="/#" id="menu4" className="menuElement" onClick={ () => move('4', '87.5%', '#ffcc80')}>
+                            <FontAwesomeIcon icon={faUserCircle} />
+                        </a>
                     </div>
                 </div>
                 <div id="bgWrapper">
