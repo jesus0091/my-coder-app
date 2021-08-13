@@ -6,7 +6,7 @@ import ComponentII from './components/ComponentII/ComponentII';
 import CardComponent from './components/Card/Card';
 import ItemListContainer from './components/ItemListContainer/ItemListContainer';
 import Categories from './components/Categories/Categories';
-import './App.css'
+import './App.css';
 
 
 
