@@ -1,20 +1,20 @@
 import React from 'react'
+import CartWidget from '../CartWidget/CartWidget'
 import { Navbar, Container, Nav } from 'react-bootstrap'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faShoppingCart } from '@fortawesome/free-solid-svg-icons'
+import './Header.css'
 
 const Header = () => {
     return (
         <>
-  <Navbar className='fixed-top' bg="dark" variant="dark">
-    <Container>
-    <Navbar.Brand href="#home">Store</Navbar.Brand>
-    <Nav className="ml-auto">
-      <Nav.Link href="#pricing"><FontAwesomeIcon icon={faShoppingCart} /></Nav.Link>
-    </Nav>
-    </Container>
-  </Navbar>
-</>
+        <Navbar className='NavbarTop sticky-top' variant='dark'>
+          <Container className='container'>
+          <Navbar.Brand className='link' href="#home">Store</Navbar.Brand>
+          <Nav className="ml-auto">
+            <Nav.Link className='link' href="#pricing"><CartWidget /></Nav.Link>
+          </Nav>
+          </Container>
+        </Navbar>
+      </>
     )
 }
 export default Header;

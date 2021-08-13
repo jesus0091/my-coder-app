@@ -4,13 +4,21 @@ import Header from './components/Header/Header'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ComponentII from './components/ComponentII/ComponentII';
 import CardComponent from './components/Card/Card';
+import ItemListContainer from './components/ItemListContainer/ItemListContainer';
+import Categories from './components/Categories/Categories';
+import './App.css'
+
 
 
 export default class App extends Component {
     render() {
         return (
-            <div>
+            <div className='body'>
                 <Header />
+                <ItemListContainer 
+                    greeting='Hola'
+                />
+                <Categories/>
                 <CardComponent 
                     cardImage=''
                     cardTitle='Producto 1'
@@ -19,8 +27,8 @@ export default class App extends Component {
                 />
                 <CardComponent 
                     cardImage=''
-                    cardTitle='Producto 1'
-                    cardDescription='Descrpcion de producto 1'
+                    cardTitle='Producto 2'
+                    cardDescription='Descrpcion de producto 2'
                     buttonName='Add to cart'
                 />
                 <CardComponent 

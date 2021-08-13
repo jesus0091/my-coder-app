@@ -13,7 +13,6 @@ const NavBar = () => {
           .to("#bubble1", {duration: 0.1, y: "150%", boxShadow: 'none', ease: "ease-out",}, 0)
           .to("#bubble2", {duration: 0.1, y: "150%", boxShadow: 'none', ease: "ease-out",}, 0)
           .to("#bubble3", {duration: 0.1, y: "150%", boxShadow: 'none', ease: "ease-out",}, 0)
-          .to("#bubble4", {duration: 0.1, y: "150%", boxShadow: 'none', ease: "ease-out",}, 0)
           .to(".icon", {duration: 0.05, opacity: 0, ease: "ease-out",}, 0)
           .to("#bgBubble", {duration: 0.2, left: position, ease: "ease-in-out"}, 0.1)
           .to("#bgBubble", {duration: 0.15, bottom: "-50px", ease: "ease-out"}, '-=0.2')
@@ -30,20 +29,16 @@ const NavBar = () => {
                     <div id="bubbleWrapper">
                         <a href="/#" id="bubble1" className="bubble"><span className="icon"><FontAwesomeIcon icon={faHouseUser} /></span></a>
                         <a href="/#" id="bubble2" className="bubble"><span className="icon"><FontAwesomeIcon icon={faShoppingBag} /></span></a>
-                        <a href="/#" id="bubble3" className="bubble"><span className="icon">3</span></a>
-                        <a href="/#" id="bubble4" className="bubble"><span className="icon"><FontAwesomeIcon icon={faUserCircle} /></span></a>
+                        <a href="/#" id="bubble3" className="bubble"><span className="icon"><FontAwesomeIcon icon={faUserCircle} /></span></a>
                     </div>
                     <div id="menuWrapper">
-                        <a href="/#" id="menu1" className="menuElement" onClick={ () => move('1', '12.5%', '#ffcc80')}>
+                        <a href="/#" id="menu1" className="menuElement" onClick={ () => move('1', '16.67%', '#ffff')}>
                             <FontAwesomeIcon icon={faHouseUser} />
                         </a>
-                        <a href="/#" id="menu2" className="menuElement" onClick={ () => move('2', '37.5%', '#ffcc80')}>
+                        <a href="/#" id="menu2" className="menuElement" onClick={ () => move('2', '50.0%', '#ffff')}>
                             <FontAwesomeIcon icon={faShoppingBag} />
                         </a>
-                        <a href="/#" id="menu3" className="menuElement" onClick={ () => move('3', '62.5%', '#ffcc80')}>
-                            <FontAwesomeIcon icon={faHouseUser} />
-                        </a>
-                        <a href="/#" id="menu4" className="menuElement" onClick={ () => move('4', '87.5%', '#ffcc80')}>
+                        <a href="/#" id="menu3" className="menuElement" onClick={ () => move('3', '83.34%', '#ffff')}>
                             <FontAwesomeIcon icon={faUserCircle} />
                         </a>
                     </div>

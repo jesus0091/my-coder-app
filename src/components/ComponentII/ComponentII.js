@@ -6,7 +6,8 @@ class ComponentII extends React.Component {
        super();
 
        this.state = {
-           name: "Pepe"
+           name: "Pepe",
+           age: "18"
        };
    }
 
